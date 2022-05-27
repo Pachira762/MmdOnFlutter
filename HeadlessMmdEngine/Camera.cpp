@@ -5,8 +5,7 @@ namespace headless_mmd {
 
 void Camera::Update(int frame) {
 	if (animation_) {
-		(void)frame;
-		//animation_->GetCameraInfo(frame, position_, forward_, up_, fov_);
+		animation_->GetCameraInfo(frame, position_, forward_, up_, fov_);
 	}
 
 	CalcViewMatrix();
