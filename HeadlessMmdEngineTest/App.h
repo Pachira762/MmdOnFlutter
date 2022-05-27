@@ -11,9 +11,6 @@ public:
 private:
 	headless_mmd::HeadlessMmdEngine* engine_ = nullptr;
 
-	HWND child_ = NULL;
-
 	virtual bool OnCreate(HWND hwnd) override;
 	virtual void OnSize(int width, int height) override;
-	virtual void OnMouseDrag(int mx, int my, int dx, int dy) override;
 };
